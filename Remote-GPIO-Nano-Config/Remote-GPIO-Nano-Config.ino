@@ -27,12 +27,12 @@ void setup() {
 
   //One simple call, with the address first and the object second.
   EEPROM.put(10, 10);   // IP Address first octet
-  EEPROM.put(20, 1);    // IP Address second octet
-  EEPROM.put(30, 30);   // IP Address third octet
-  EEPROM.put(40, 23);   // IP Address fourth octet
-  EEPROM.put(50, "DHCP");     // Set a DHCP or Static IP Address
-  EEPROM.put(60, 8888);     // Set the UDP port
-  EEPROM.put(100, "ArduinoNano");   // Set the device Hostname
+  EEPROM.put(20, 108);    // IP Address second octet
+  EEPROM.put(30, 150);   // IP Address third octet
+  EEPROM.put(40, 75);   // IP Address fourth octet
+  EEPROM.put(50, "Static");     // Set a DHCP or Static IP Address
+  EEPROM.put(60, 1871);     // Set the UDP port
+  EEPROM.put(100, "PageMic01");   // Set the device Hostname
 
   Serial.println("Written data to EEPROM");
 
